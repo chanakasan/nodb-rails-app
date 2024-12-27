@@ -2,6 +2,7 @@ services:
   - type: web
     name: my_rails_app_two
     plan: free
+    runtime: ruby
     buildCommand: "./render-build.sh"
     startCommand: "bundle exec rails s"
     envVars:
